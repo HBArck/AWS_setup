@@ -29,6 +29,6 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   #3.4 Running
     sudo service mongod start
 
-#4. npm install in project folder with package.json in it
+# 4. npm install in project folder with package.json in it
 
-#5. sudo npm install forever -g
+# 5. sudo npm install forever -g
