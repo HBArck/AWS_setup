@@ -22,10 +22,15 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   sudo nano /etc/yum.repos.d/mongodb-org-4.0.repo
   
   [mongodb-org-4.0]
+
   name=MongoDB Repository
+
   baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/4.0/x86_64/
+
   gpgcheck=1
+
   enabled=1
+
   gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
 
   #3.3 Installing
