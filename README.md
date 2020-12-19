@@ -18,13 +18,13 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   sudo apt-get install apache2
   ```
 # 3. MongoDB
-  #3.1Create a /etc/yum.repos.d/mongodb-org-4.0.repo file 
+  #3.1 Create a /etc/yum.repos.d/mongodb-org-4.4.repo file 
   ```
-  sudo touch /etc/yum.repos.d/mongodb-org-4.0.repo
+  sudo touch /etc/yum.repos.d/mongodb-org-4.4.repo
   ```
   #3.2 Setup repository:
   ```
-  sudo nano /etc/yum.repos.d/mongodb-org-4.0.repo
+  sudo nano /etc/yum.repos.d/mongodb-org-4.4.repo
   ```
   ```
   [mongodb-org-4.4]
