@@ -42,9 +42,13 @@ simple instruction for environment setup on EC2 Linux 2 (64)
 
 # 5. sudo npm install forever -g
 
-# 6. NGINX AWS Extras
+# 6. NGINX AWS Extras DEPRECATED!
   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-ami-basics.html#extras-library
   ```
   amazon-linux-extras list
   sudo amazon-linux-extras install nginx1.12
+  ```
+# 6. NGINX
+  ```
+  sudo yum install nginx
   ```
