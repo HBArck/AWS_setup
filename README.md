@@ -76,6 +76,27 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   ```
   Launch redis
   ```
+  sudo nano /etc/systemd/system/redis.service
+  ```
+  ```
+  [Unit]
+  Description=Redis In-Memory Data Store 
+  After=network.target
+
+  [Service]
+  User=redis
+  Group=redis
+  ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf
+  ExecStop=/usr/local/bin/redis-cli shutdown
+  Restart=always
+
+  [Install]
+  WantedBy=multi-user.target
+  ```
+  ```
+  sudo adduser --system --group --no-create-home redis
+  ```
+  ```
   redis-server
   sudo systemctl unmask  redis-server.service
   ```
