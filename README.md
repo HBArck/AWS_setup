@@ -77,4 +77,5 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   Launch redis
   ```
   redis-server
+  sudo systemctl unmask  redis-server.service
   ```
