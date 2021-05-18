@@ -52,3 +52,29 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   ```
   sudo yum install nginx
   ```
+  
+# 7. REDIS
+  ```
+  sudo yum -y install gcc make # install GCC compiler
+  cd /usr/local/src 
+  sudo wget http://download.redis.io/redis-stable.tar.gz
+  sudo tar xvzf redis-stable.tar.gz
+  sudo rm -f redis-stable.tar.gz
+  cd redis-stable
+  sudo yum groupinstall "Development Tools"
+  sudo make distclean
+  sudo make
+  sudo yum install -y tcl
+  ```
+  check if redis installed
+  ```
+  sudo make test
+  ```
+  ```
+  sudo cp src/redis-server /usr/local/bin/
+  sudo cp src/redis-cli /usr/local/bin/
+  ```
+  Launch redis
+  ```
+  redis-server
+  ```
