@@ -37,6 +37,14 @@ simple instruction for environment setup on EC2 Linux 2 (64)
     ```
     sudo service mongod start
     ```
+  #3.5 Backup
+    ```
+    mongodump "--archive=./backups/XYZ-backup.gz" --gzip --db DB_NAME
+    ```
+  #3.6 Restore
+    ```
+    mongorestore "--archive=./backups/XYZ-backup.gz" --gzip --db DB_NAME
+    ```
 
 # 4. npm install in project folder with package.json in it
 
