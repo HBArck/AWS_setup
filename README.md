@@ -59,9 +59,10 @@ simple instruction for environment setup on EC2 Linux 2 (64)
 # 6. NGINX
   ```
   sudo yum clean metadata
- sudo yum -y install nginx
+  sudo amazon-linux-extras enable nginx1
+  sudo yum -y install nginx
     
- nginx -v
+  nginx -v
   ```
   
 # 7. REDIS
