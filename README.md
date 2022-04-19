@@ -36,6 +36,7 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   #3.4 Running
   ```
   sudo service mongod start
+  Ubuntu: sudo chown -R mongodb: /var/lib/mongodb
   ```
   #3.5 Backup
   ```
