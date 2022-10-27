@@ -4,7 +4,7 @@ simple instruction for environment setup on EC2 Linux 2 (64)
 
 # 1. NODE JS
   ```
-  curl --silent --location https://rpm.nodesource.com/setup_14.x | sudo bash -
+  curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -
   sudo yum -y install nodejs
   ``` 
 # 2. Apache2 - for php hosting sites
