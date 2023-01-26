@@ -65,8 +65,15 @@ simple instruction for environment setup on EC2 Linux 2 (64)
     
   nginx -v
   ```
-  
-# 7. REDIS
+# 7. CERTBOT 
+  ```
+  wget -O epel.rpm –nv https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  sudo yum install -y ./epel.rpm
+  sudo yum install python2-certbot-apache.noarch
+  sudo yum install certbot python2-certbot-nginx
+  sudo certbot certonly --nginx
+  ```
+# 8. REDIS
   ```
   sudo yum -y install gcc make # install GCC compiler
   cd /usr/local/src 
