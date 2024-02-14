@@ -13,6 +13,16 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   sudo apt-get install apache2
   ```
 # 3. MongoDB
+  #3.0 Install mongosh
+  ```
+  sudo service mongod stop
+  sudo apt-get purge mongodb-org*
+  sudo rm -r /var/log/mongodb
+  sudo rm -r /var/lib/mongodb
+  sudo yum remove mongodb-mongosh
+  sudo yum install mongodb-mongosh-shared-openssl3
+  sudo yum install mongodb-mongosh
+  ```
   #3.1 Create a /etc/yum.repos.d/mongodb-org-6.0.repo file 
   ```
   sudo touch /etc/yum.repos.d/mongodb-org-6.0.repo
