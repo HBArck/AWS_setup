@@ -57,6 +57,13 @@ simple instruction for environment setup on EC2 Linux 2 (64)
   mongorestore "--archive=./backups/XYZ-backup.gz" --gzip --db DB_NAME
   ```
 
+  #3.6 if Mongo Stuck MONGODB_CONFIG_OVERRIDE_NOFORK 
+  ```
+  sudo rm /tmp/mongodb-27017.sock
+  sudo systemctl restart mongod
+  ```
+
+
 # 4. npm install in project folder with package.json in it
 
 # 5. sudo npm install forever -g
